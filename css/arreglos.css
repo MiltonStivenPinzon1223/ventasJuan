@@ -1,0 +1,249 @@
+/* fallback */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v134/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+  }
+
+  p{
+    padding: 0px;
+    margin: 0px;
+    font-size: 45px!important;
+  }
+footer{font-size: 30px!important;}
+  li, h6{
+    font-size: 40px!important;
+  }
+  
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 8vh;
+    margin-top: 20px;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+#left{margin-left: -100px!important;}
+#right{margin-right: -100px!important;}
+
+.titulo{
+    margin-top: 50px;
+    font-size: 80px!important;
+}
+
+#info{
+  text-align: center;
+  height: 80vh!important;
+}
+
+#photo{
+  width: 60vw!important;
+  height: 30vh;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.main{margin-top: 150px;}
+.main2{margin-top: 180px;}
+
+.card-des{
+  font-family: Roboto;
+}
+
+.des{
+  margin: 0px 120px;
+}
+
+#info{
+  background-image: url('../media/WhatsApp\ Image\ 2022-08-18\ at\ 2.28.00\ PM.jpeg');
+  background-size: cover;
+  object-fit: cover;
+  background-color: rgba(19, 38, 62, 0.5)!important;
+}
+
+.progress, .determinate{
+  height: 50px!important;
+  border-radius: 20px!important;
+}
+#descripcion{padding: 50px;}
+strong{font-size: 60px!important;}
+
+@media screen and (min-width: 990px) {
+  .titulo{
+    margin-top: 0px;
+    font-size: 50px!important;
+  }
+  
+  strong{font-size: 25px!important;}
+
+  p{
+    font-size: 15px!important;
+  }
+
+  li, h6{
+    font-size: 15px!important;
+  }
+
+  .material-icons{
+    margin-top: 10px;
+  }
+
+  #photo{
+    margin-left: 50px;
+    margin-bottom: 30px;
+    width: 15vw!important;
+  }
+
+  #info{text-align: justify;}
+
+  .info-info{
+    position: absolute;
+    top:100px;
+    left: 300px;
+  }
+  .progress, .determinate{
+    height: 20px!important;
+  }
+
+  #habilidades{
+    position: absolute;
+    left: 80px;
+    width: 40vw;
+    height: 110vh;
+  }
+  #descripcion{
+    padding: 20px;
+    position: absolute;
+    left: 45vw;
+    width: 47vw;
+    height: 110vh;
+  }
+
+  footer{
+    width: 100%;
+    height: 10vh;
+    position: absolute;
+    padding: 10px;
+    top: 90vh !important;
+    position: fixed;
+  }
+
+  .prueba2{width: 24.7vw;}
+
+  .info-photo{height: 60vh!important;}
+
+}
+
+
+
+
+.fondo-inicio{
+  width: 100vw;
+  height: 80vh;
+  background-image: url('../media/pexels-aditya-singh-3103199.jpg');
+  background-size: 100% 140%;
+  object-fit: cover;
+  background-position: 0 -6cm;
+}
+
+.trans{
+  opacity: 0px !important;
+}
+
+.s8 img{
+  width: 100%;
+}
+
+.presentacion{
+  margin: 0px!important;
+  width: 100%;
+  padding: 0px
+}
+
+.slider .slides li img{
+  width: 950px!important;
+  height: 400px!important;
+}
+.caption{top:0!important; left: 0!important;}
+
+.slides{background-color: #ffffff!important;}
+
+
+
+
+.prueba1{
+  background-color: #1E2A38;
+  position: relative;
+}
+
+.prueba2{
+  border-radius: 20px 20px 0px 0px;
+  position: absolute;
+  top: -55px;
+  width: 24.7%;
+  background-color: rgba(28, 42, 181, 0.6);
+  transition: all 500ms ease-out;
+}
+
+
+.cursor{cursor: pointer;}
+
+.x:hover > .capa2{
+  opacity: 1;
+  visibility: visible;
+}
+
+.x:hover > .capa2 p{
+  top: 70px;
+}
+
+.prueba2{overflow: hidden;}
+
+
+
+.capa2{
+  position: absolute;
+  top: -55px;
+  width: 24.7%;
+  height: 40vh;
+  padding: 20px;
+  transition: all 500ms ease-out;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 20px 20px 0px 0px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.capa2 p{
+  font-family: Roboto;
+  transition: all 500ms ease-out;
+  position: absolute;
+  top: -90px;
+}
+
+
+.info-photo{
+  width: 100%;
+  height: 25vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.info{
+  padding: 0!important;
+}
+
+.who{
+  margin: 30px 60px 0px 30px!important;
+}
+

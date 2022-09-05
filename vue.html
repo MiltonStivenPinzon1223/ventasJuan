@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div id="app">
+        <h1>{{contant}}</h1>
+        <input type="text" v-model="nuevaTarea">
+        <button @click="agregar">Agregar Nueva tarea</button>
+        <ul>
+            <li v-for="tarea of tareas">{{tarea.titulo}}</li>
+            <span></span>
+        </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el:'#app',
+            data:{
+                contant: 'hola mundo',
+                tareas: [
+                    {titulo:'tarea 1', descripcion:'esta es la tarea 1', status:'En Ejecucion',},
+                    {titulo:'tarea 2', descripcion:'esta es la tarea 2', status:'Sin Comenzar',},
+                    {titulo:'tarea 3', descripcion:'esta es la tarea 3', status:'Finalizado',},
+                    {titulo:'tarea 4', descripcion:'esta es la tarea 4', status:'En Ejecucion',}
+                ],
+                nuevaTarea: ''
+            },
+            methods:{
+                agregar(){
+                    this.tareas.push({
+                        titulo:this.nuevaTarea, descripcion:'Nueva tarea agregada', status:'Sin Comenzar'
+                    })
+                }
+            }
+        })
+    </script>
+</body>
+</html>
