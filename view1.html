@@ -256,26 +256,34 @@
               <div class="container ">
                 <h4>NUESTRO SERVICIO</h4><hr>
                 <p>Como diseñadores hemos logrado desarrollador diferentes plantillas que te ayudaran a crear tu aplicativo con el cual podrás encontrar en un “amplio” catalogo.</p><br><br><br><br>
-                <a class="waves-effect waves-light btn green"><i class="material-icons right">send</i>Mirar Catalogo</a>
+                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
               </div>
             </div>
     </div>
     </div>
 
-
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <p>prueba</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
   <br><br><br>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.slider');
-    var instances = M.Slider.init(elems,{
-      indicators:false,
-      interval:3000,
-    });
-  });
-
   AOS.init();
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems);
+  });
   </script>
   </body>
 </html>
