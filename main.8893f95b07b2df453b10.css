@@ -44,3 +44,7 @@
     opacity: 1;
     filter: contrast(120%)
 }
+
+.modal{
+    height: 80vh!important;
+}

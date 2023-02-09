@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat"
       rel="stylesheet"
@@ -76,12 +78,12 @@
         <h3>Proyectos</h3>
         <hr />
         <div class="container">
-          <section class="galeria">
-            <img class="modal-trigger" href="#modal1" src="media/proy1-1.PNG" alt="">
-            <img class="modal-trigger" href="#modal2" src="media/proy1-2.PNG" alt="">
-            <img class="modal-trigger" href="#modal3" src="media/proy1-3.PNG" alt="">
-            <img class="modal-trigger" href="#modal4" src="media/proy1-4.jpeg" alt="">
-            <img class="modal-trigger" href="#modal5" src="media/proy1-5.jpeg" alt="">
+          <section class="galeria" data-aos="fade-down">
+            <img class="modal-trigger" href="#modal1" src="media/2-1.PNG" alt="">
+            <img class="modal-trigger" href="#modal2" src="media/2-1.PNG" alt="">
+            <img class="modal-trigger" href="#modal3" src="media/3-1.png" alt="">
+            <img class="modal-trigger" href="#modal4" src="media/4-1.png" alt="">
+            <img class="modal-trigger" href="#modal5" src="media/5-1.png" alt="">
         </section>
         </div>
       </section>
@@ -122,7 +124,7 @@
         <h3>Reconocimientos</h3>
         <hr />
         <div class="container">
-          <section class="galeria">
+          <section class="galeria" data-aos="fade-down">
             <img class="modal-trigger" href="#modal6" src="media/reconocimiento1.jpg" alt="">
             <img class="modal-trigger" href="#modal7" src="media/reconocimiento2.jpg" alt="">
             <img class="modal-trigger" href="#modal8" src="media/reconocimiento3.png" alt="">
@@ -153,79 +155,101 @@
         >Developed and designed by Milton Stiven Gonzalez Pinzón. ©2023. All rights reserved.</small
       >
     </footer>
-    <div id="modal1" class="modal">
+    <div id="modal1" class="modal modal-fixed-footer">
       <div class="modal-content">
-        <div class="carousel">
-          <a class="carousel-item" href="#one!"><img src="media/proy1-1.PNG"></a>
-          <a class="carousel-item" href="#two!"><img src="media/proy1-2.png"></a>
-          <a class="carousel-item" href="#three!"><img src="media/proy1-3.png"></a>
-          <a class="carousel-item" href="#four!"><img src="media/proy1-4.jpeg"></a>
-          <a class="carousel-item" href="#five!"><img src="media/proy1-5.jpeg"></a>
+        <div class="owl-carousel">
+          <div><img class="img-carousel" src="media/2-1.PNG"></div>
+          <div><img class="img-carousel" src="media/2-2.png"></div>
+          <div><img class="img-carousel" src="media/2-3.PNG"></div>
+          <div><img class="img-carousel" src="media/2-4.jpeg"></div>
+          <div><img class="img-carousel" src="media/2-5.jpeg"></div>
         </div>
       </div>
-    </div>
-    <div id="modal2" class="modal">
-      <div class="modal-content">
-        <div class="carousel">
-          <a class="carousel-item" href="#one!"><img src="media/proy1-1.PNG"></a>
-          <a class="carousel-item" href="#two!"><img src="media/proy1-2.png"></a>
-          <a class="carousel-item" href="#three!"><img src="media/proy1-3.png"></a>
-          <a class="carousel-item" href="#four!"><img src="media/proy1-4.jpeg"></a>
-          <a class="carousel-item" href="#five!"><img src="media/proy1-5.jpeg"></a>
-        </div>
+      <div class="modal-footer">
+        <p>Proyecto realizado durante el tecnico en Programacion de software, el cual consta en ser un observador escolar para la institucion donde estudie, para este desarrollo se utilizaron lenguajes como HTML, CSS, JavaScript, PHP y utilizando el motor de base de datos mysql </p><a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
       </div>
     </div>
-    <div id="modal3" class="modal">
+    <div id="modal2" class="modal modal-fixed-footer">
       <div class="modal-content">
-        <div class="carousel">
-          <a class="carousel-item" href="#one!"><img src="media/proy1-1.PNG"></a>
-          <a class="carousel-item" href="#two!"><img src="media/proy1-2.png"></a>
-          <a class="carousel-item" href="#three!"><img src="media/proy1-3.png"></a>
-          <a class="carousel-item" href="#four!"><img src="media/proy1-4.jpeg"></a>
-          <a class="carousel-item" href="#five!"><img src="media/proy1-5.jpeg"></a>
+        <div class="owl-carousel">
+          <div><img class="img-carousel" src="media/2-1.PNG"></div>
+          <div><img class="img-carousel" src="media/2-2.png"></div>
+          <div><img class="img-carousel" src="media/2-3.PNG"></div>
+          <div><img class="img-carousel" src="media/2-4.jpeg"></div>
+          <div><img class="img-carousel" src="media/2-5.jpeg"></div>
         </div>
       </div>
-    </div>
-    <div id="modal4" class="modal">
-      <div class="modal-content">
-        <div class="carousel">
-          <a class="carousel-item" href="#one!"><img src="media/proy1-1.PNG"></a>
-          <a class="carousel-item" href="#two!"><img src="media/proy1-2.png"></a>
-          <a class="carousel-item" href="#three!"><img src="media/proy1-3.png"></a>
-          <a class="carousel-item" href="#four!"><img src="media/proy1-4.jpeg"></a>
-          <a class="carousel-item" href="#five!"><img src="media/proy1-5.jpeg"></a>
-        </div>
+      <div class="modal-footer">
+        <p>Proyecto realizado durante el tecnologo en Analisis y Desarrollo de Sistemas de Información el cual se consiste en un Ecommerce de una optica, en el cual se desarrollo usando herramientas como HTML, CSS, JavaScript y enfocandonos en el framework de PHP llamado Laravel.</p><a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
       </div>
     </div>
-    <div id="modal5" class="modal">
+    <div id="modal3" class="modal modal-fixed-footer">
       <div class="modal-content">
-        <div class="carousel">
-          <a class="carousel-item" href="#one!"><img src="media/proy1-1.PNG"></a>
-          <a class="carousel-item" href="#two!"><img src="media/proy1-2.png"></a>
-          <a class="carousel-item" href="#three!"><img src="media/proy1-3.png"></a>
-          <a class="carousel-item" href="#four!"><img src="media/proy1-4.jpeg"></a>
-          <a class="carousel-item" href="#five!"><img src="media/proy1-5.jpeg"></a>
+        <div class="owl-carousel">
+          <div><img class="img-carousel" src="media/3-1.PNG"></div>
+          <div><img class="img-carousel" src="media/3-2.png"></div>
+          <div><img class="img-carousel" src="media/3-3.png"></div>
+          <div><img class="img-carousel" src="media/3-4.png"></div>
+          <div><img class="img-carousel" src="media/3-5.png"></div>
+          <div><img class="img-carousel" src="media/3-6.png"></div>
+          <div><img class="img-carousel" src="media/3-7.png"></div>
         </div>
       </div>
+      <div class="modal-footer">
+        <p>Proyecto realizado durante las practicas del tecnologo en Analisis y Desarrollo de Sistemas de Información, el cual consta sobre una biblioteca para la gestion de documentacion (liquidaciones, facturas, contratos, etc) sobre los proveedores de la compañia, este aplicativo se desarrollo sobre el framework de PHP llamado Laravel y usando como motor de base de datos SQL SERVER.</p><a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+      </div>
     </div>
-    <div id="modal6" class="modal">
+    <div id="modal4" class="modal modal-fixed-footer">
+      <div class="modal-content">
+        <div class="owl-carousel">
+          <div><img class="img-carousel" src="media/4-1.PNG"></div>
+          <div><img class="img-carousel" src="media/4-2.png"></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <p>Proyecto realizado durante las practicas en la ingeneria de software, el cual consiste en ser un formulario para los estudiantes de la universidad pedidos por esta misma, donde los administrativos tambien podian entrar al aplicativo y poder descargar en formato excel todas las respuestas de los estudiantes. este proyecto se desarrollo en lenguajes como HTML, CSS, JavaScript, PHP y utilizando el motor de base de datos mysql</p><a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+      </div>
+    </div>
+    <div id="modal5" class="modal modal-fixed-footer">
+      <div class="modal-content">
+        <div class="owl-carousel">
+          <div><img class="img-carousel" src="media/5-1.PNG"></div>
+          <div><img class="img-carousel" src="media/5-2.png"></div>+
+        </div>
+      </div>
+      <div class="modal-footer">
+        <p>Proyecto realizado durante las practicas en la ingeneria de software, el cual consta en ser un sistema de agendamiento de los espacios dentro de la universidad, ya sean como para estudiantes, docentes y/o administrativos. Para este proyecto se utilizo el framework de PHP llamado Laravel y usando como motor de base de datos mysql.</p><a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+      </div>
+    </div>
+    <div id="modal6" class="modal modal-fixed-footer">
       <div class="modal-content">
         <img src="media/reconocimiento1.jpg" alt="">
       </div>
+      <div class="modal-footer">
+        <p>Reconocimiento otorgado en 2020 por el mejor rendimiento academico durante el tecnico en Programacion de Software</p><a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+      </div>
     </div>
-    <div id="modal7" class="modal">
+    <div id="modal7" class="modal modal-fixed-footer">
       <div class="modal-content">
         <img src="media/reconocimiento2.jpg" alt="">
       </div>
+      <div class="modal-footer">
+        <p>Reconocimiento otorgado en 2022 por el buen desarrollo del aplicativo destinado en la experiencia laboral en telefonica Movistar</p><a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+      </div>
     </div>
-    <div id="modal8" class="modal">
+    <div id="modal8" class="modal modal-fixed-footer">
       <div class="modal-content">
         <img src="media/reconocimiento3.png" alt="">
       </div>
+      <div class="modal-footer">
+        <p>Reconocimiento otorgado en 2022 por buen desempeño laboral en practicas universitarias.</p><a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+      </div>  
     </div>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script>
   AOS.init();
 
@@ -243,5 +267,24 @@
     var elems = document.querySelectorAll('.carousel');
     var instances = M.Carousel.init(elems);
   });
+
+  $(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+});
   </script>
 </html>
