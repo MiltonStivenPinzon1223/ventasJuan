@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      
+    <style>
+      .sticky-top {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 1020;
+      }
+
+      body {
+        background-color: #eaf2ef;
+      }
+
+      .background{
+        background-image: url("media/config.webp");
+        background-size: cover;
+      }
+      .sidenav{
+        padding-top: 9vh!important;
+      }
+    </style>
+    <script>
+      function isMobile() {
+        return (
+          navigator.userAgent.match(/Android/i) ||
+          navigator.userAgent.match(/webOS/i) ||
+          navigator.userAgent.match(/iPhone/i) ||
+          navigator.userAgent.match(/iPod/i) ||
+          navigator.userAgent.match(/iPad/i) ||
+          navigator.userAgent.match(/BlackBerry/i)
+        );
+      }
+      isMobile();
+</script>
+
+</head>
+  <body>
+    <!--<img src="media/logo.png" alt="" style="width: 100%;height: 90vh; padiing:0px;">-->
+    <div class="sticky-top">
+      <nav class="indigo darken-4" id="sticky-top">
+        <div class="navbar-wrapper container">
+          <ul class="left">
+            <li><a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">settings</i></a>
+            </li>
+          </ul>
+          <a class="white-text text-darken-2 brand-logo center" href="#"
+            >Mi Portafilio</a>
+          <ul class="right">
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+
+    <ul id="slide-out" class="sidenav">
+      <li><div class="user-view">
+        <div class="background">
+        </div>
+        <h4 class="white-text">Configuraciones</h4><br>
+      </div></li>
+      <li><a href="#!" class="input-title" >Modo Oscuro</a>
+        <label class="input-switch">
+          <input type="checkbox" id="miElementoCheckbox">
+          <span class="input-slider round"></span>
+        </label>
+      </li><br><br><br>
+      <li><a href="#!" class="input-title" >Color de Menu</a><input type="color" name="color-navbar" id="color-navbar"></li>
+      <li><a href="#!" class="input-title" >Color de Tabla</a><input type="color" name="color-table" id="color-table"></li>
+      </ul>
+    
+
+    <hr/>
+    <div class="container">
+      <table class="centered responsive-table indigo lighten-4">
+        <thead >
+          <tr class="indigo" id="thead">
+            <th colspan="4">Tipo de Dato</th>
+            <th colspan="4">Dato</th>
+          </tr>
+        </thead>
+
+        <tbody id="tbody">
+          <tr>
+            <td><strong>Nombres:</strong></td>
+            <td colspan="3">Milton Stiven</td>
+            <td><strong>Apellidos:</strong></td>
+            <td colspan="3">Gonzalez Pinzon</td>
+          </tr>
+          <tr>
+            <td><strong>Edad:</strong></td>
+            <td>18 años</td>
+            <td><strong>Ciudad de Residencia:</strong></td>
+            <td colspan="2">Bogotá D.C</td>
+            <td><strong>Teléfono:</strong></td>
+            <td>3042217481</td>
+          </tr>
+          <tr>
+            <td colspan="2"><strong>Correo Electronico:</strong></td>
+            <td colspan="2">miltonstivenpinzon@gmail.com</td>
+            <td colspan="2"><strong>Cargo a aspirar:</strong></td>
+            <td colspan="2">Desarrollador Web</td>
+          </tr>
+          <tr>
+            <td><strong>Años de Experiencia:</strong></td>
+            <td>1 año aproximadamente</td>
+            <td colspan="4"><strong>Ultimo estudio realizado:</strong></td>
+            <td>
+              Tecnologo en Analisis y Desarrollado de Sistemas de Información
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <hr />
+    <div class="container center red accent-4 titulo">
+      <h2 class="white-text">Lenguajes Conocidos</h2>
+      <br />
+    </div>
+    <br />
+    <div class="row">
+      <div class="card col s3 red red-card accent-4 z-depth-5">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img
+            class="responsive-img activator container img-cap"
+            src="media/html-5.png"
+          />
+        </div>
+        <div class="card-content">
+          <span class="card-title activator white-text text-darken-4 container"
+            ><strong>HTML:</strong> 6<i class="material-icons right"
+              >more_vert</i
+            ></span
+          >
+        </div>
+        <div class="card-reveal indigo accent-4 white-text">
+          <span class="card-title white-text text-darken-4"
+            ><strong>HTML:</strong> 6<i class="material-icons right"
+              >close</i
+            ></span
+          >
+          <p>
+            Capaz de maquetizar una pagina web utilizando diferentes etiquetas
+            utilizadas.
+          </p>
+        </div>
+      </div>
+
+      <div class="card col s3 indigo indigo-card accent-4 z-depth-5">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img
+            class="responsive-img activator container img-cap"
+            src="media/css-3.png"
+          />
+        </div>
+        <div class="card-content">
+          <span class="card-title activator white-text text-darken-4 container"
+            ><strong>CSS:</strong> 6<i class="material-icons right"
+              >more_vert</i
+            ></span
+          >
+        </div>
+        <div class="card-reveal red accent-4 white-text text-darken-2">
+          <span class="card-title white-text text-darken-4"
+            ><strong>CSS:</strong> 6<i class="material-icons right"
+              >close</i
+            ></span
+          >
+          <p>
+            Capaz de editar el propiedades de etiquetas HTML para poder darles
+            estilos unicos.
+          </p>
+        </div>
+      </div>
+
+      <div class="card col s3 red red-card accent-4 z-depth-5">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img
+            class="responsive-img activator container img-cap"
+            src="media/js.png"
+          />
+        </div>
+        <div class="card-content">
+          <span class="card-title activator white-text text-darken-4 container"
+            ><strong>JS:</strong> 4<i class="material-icons right"
+              >more_vert</i
+            ></span
+          >
+        </div>
+        <div class="card-reveal indigo accent-4 white-text">
+          <span class="card-title white-text text-darken-4"
+            ><strong>JS:</strong> 4<i class="material-icons right"
+              >close</i
+            ></span
+          >
+          <p>
+            Conocimientos en sintaxis basica, conceptos basicos de POO,
+            manipulaciones de DOM, pequeños unos de API.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="card col s3 indigo indigo-card accent-4 z-depth-5">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img
+            class="responsive-img activator container img-cap"
+            src="media/php.png"
+          />
+        </div>
+        <div class="card-content">
+          <span class="card-title activator white-text text-darken-4 container"
+            ><strong>PHP:</strong> 8<i class="material-icons right"
+              >more_vert</i
+            ></span
+          >
+        </div>
+        <div class="card-reveal red accent-4 white-text text-darken-2">
+          <span class="card-title white-text text-darken-4"
+            ><strong>PHP:</strong> 8<i class="material-icons right"
+              >close</i
+            ></span
+          >
+          <p>
+            Capaz de crear un aplicativo web con practicamente solo este
+            lenguaje, teniendo experiencia en Frameworks como Laravel.
+          </p>
+        </div>
+      </div>
+
+      <div class="card col s3 red red-card accent-4 z-depth-5">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img
+            class="responsive-img activator container img-cap"
+            src="media/sql.png"
+          />
+        </div>
+        <div class="card-content">
+          <span class="card-title activator white-text text-darken-4 container"
+            ><strong>SQl:</strong> 7<i class="material-icons right"
+              >more_vert</i
+            ></span
+          >
+        </div>
+        <div class="card-reveal indigo accent-4 white-text">
+          <span class="card-title white-text text-darken-4"
+            ><strong>SQL:</strong> 7<i class="material-icons right"
+              >close</i
+            ></span
+          >
+          <p>
+            Capaz de realizar desde consultas sencillas como hasta procesos
+            almacenados, crucer de datos, cargue de datos masivos, etc.
+          </p>
+        </div>
+      </div>
+
+      <div class="card col s3 indigo indigo-card accent-4 z-depth-5">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="responsive-img container img-cap" src="media/pyt.png" />
+        </div>
+        <div class="card-content">
+          <span class="card-title white-text text-darken-4 container"
+            ><strong>PYTHON:</strong> 2<i class="material-icons right"
+              >more_vert</i
+            ></span
+          >
+        </div>
+        <div class="card-reveal red accent-4 white-text text-darken-2">
+          <span class="card-title white-text text-darken-4"
+            ><strong>PYTHON:</strong> 2<i class="material-icons right"
+              >close</i
+            ></span
+          >
+          <p>
+            Conocimientos en sintaxis basica, y creacion de interfaces graficas
+            sencillas.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header indigo darken-4">
+            <h4 class="modal-title container center white-text">Glovimarket</h4>
+            <button
+              type="button"
+              class="btn deep-purple darken-4"
+              data-bs-dismiss="modal"
+            >
+              <i class="material-icons">close</i>
+            </button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="carousel carousel-slider">
+              <a class="carousel-item" href="#!"
+                ><img src="media/proy1-1.PNG"
+              /></a>
+              <a class="carousel-item" href="#!"
+                ><img src="media/proy1-2.PNG"
+              /></a>
+              <a class="carousel-item" href="#!"
+                ><img src="media/proy1-3.PNG"
+              /></a>
+              <a class="carousel-item" href="#!"
+                ><img src="media/proy1-4.jpeg"
+              /></a>
+              <a class="carousel-item" href="#!"
+                ><img src="media/proy1-5.jpeg"
+              /></a>
+              <a class="carousel-item" href="#!"
+                ><img src="media/proy1-6.jpeg"
+              /></a>
+              <a class="carousel-item" href="#!"
+                ><img src="media/proy1-7.jpeg"
+              /></a>
+            </div>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer indigo darken-4">
+            <button
+              type="button"
+              class="btn red darken-4"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal2">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header indigo darken-4">
+            <h4 class="modal-title container center white-text">
+              Filtro para una Galeria
+            </h4>
+            <button
+              type="button"
+              class="btn deep-purple darken-4"
+              data-bs-dismiss="modal"
+            >
+              <i class="material-icons">close</i>
+            </button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="carousel carousel-slider">
+              <a class="carousel-item" href="#!"
+                ><img src="media/proy2-1.jpeg"
+              /></a>
+              <a class="carousel-item" href="#!"
+                ><img src="media/proy2-2.jpeg"
+              /></a>
+              <a class="carousel-item" href="#!"
+                ><img src="media/proy2-3.jpeg"
+              /></a>
+              <a class="carousel-item" href="#!"
+                ><img src="media/proy2-4.jpeg"
+              /></a>
+            </div>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer indigo darken-4">
+            <button
+              type="button"
+              class="btn red darken-4"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+    <div class="container center red darken-4 titulo">
+      <h2 class="white-text">Proyectos en los que he trabajado</h2>
+      <br />
+    </div>
+    <br />
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image">
+              <img src="media/proy1-1.PNG" />
+            </div>
+            <div class="card-content">
+              <h4>Glovimarket</h4>
+
+              <p>
+                Este proyecto trata sobre un aplicativo web enfocado al
+                inventario y venta de produtos opticos, el cual se realizo para
+                el proyecto final durante mis estudios en el tecnologo.
+              </p>
+              <p>
+                El proyecto se realizo utilizando diferentes lenguajes
+                orientados al desarrollo web como HTML, CSS, JS, y
+                principalmente PHP utilizando el Framework Laravel y como motor
+                de datos MYSQL.
+              </p>
+            </div>
+            <div class="card-action">
+              <button
+                type="button"
+                class="btn waves-effect red darken-4 btn modal-trigger"
+                data-bs-toggle="modal"
+                data-bs-target="#myModal"
+              >
+                mas informacion
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image">
+              <img src="media/proy2-1.jpeg" />
+            </div>
+            <div class="card-content">
+              <h4>Filtro para una Galeria</h4>
+              <p>
+                Este proyecto fue creado con lenguajes orientados al desarrollo
+                web como HTML, CSS, y principalmente toda la funcionalidad con
+                JS nativo, con el fin de poner en practica lo que habia
+                aprendido de manejo de DOM.
+              </p>
+            </div>
+            <div class="card-action">
+              <button
+                type="button"
+                class="btn waves-effect red darken-4 btn modal-trigger"
+                data-bs-toggle="modal"
+                data-bs-target="#myModal2"
+              >
+                mas informacion
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+    <div class="container center red darken-4 titulo">
+      <h3 class="white-text">Herramientas que estoy o deseo aprender</h3>
+      <br />
+    </div>
+    <br />
+    <div class="row">
+      <div class="card col s3 red red-card accent-4 z-depth-5">
+        <div class="card-image waves-effect waves-block waves-light">        </div>
+        <div class="card-content">
+          <span class="card-title activator white-text text-darken-4 container"
+            ><strong>JS</strong></span
+          >
+        </div>
+        <div class="card-reveal indigo accent-4 white-text">
+          <span class="card-title white-text text-darken-4"
+            ><strong>JS</strong></span
+          >
+          <p>
+            Siento que este lenguaje sera bastante importante para crecer
+            profesionalmente y asi poder tambien aprender diferentes
+            herramientas que nos puede brindar este lenguajes de programacion.
+          </p>
+        </div>
+      </div>
+
+      <div class="card col s3 indigo indigo-card accent-4 z-depth-5">
+        <div class="card-image waves-effect waves-block waves-light">/>
+        </div>
+        <div class="card-content">
+          <span class="card-title activator white-text text-darken-4 container"
+            ><strong>React</strong></span
+          >
+        </div>
+        <div class="card-reveal red accent-4 white-text text-darken-2">
+          <span class="card-title white-text text-darken-4"
+            ><strong>React</strong></span
+          >
+          <p>
+            He notado que esta libreria es bastante utilizada en este medio, y
+            por ello siento que seria una buena herramienta para crecer
+            profesionalmente y mejor en temas de diseño mis proximos proyectos
+          </p>
+        </div>
+      </div>
+
+      <div class="card col s3 red red-card accent-4 z-depth-5">
+        <div class="card-image waves-effect waves-block waves-light">        </div>
+        <div class="card-content">
+          <span class="card-title activator white-text text-darken-4 container"
+            ><strong>VUE JS</strong></span
+          >
+        </div>
+        <div class="card-reveal indigo accent-4 white-text">
+          <span class="card-title white-text text-darken-4"
+            ><strong>VUE JS</strong></span
+          >
+          <p>
+            Este Framework siempre lo he visto interesante y he visto que
+            tambien es bastante usado en la industria lo cual tambien es una
+            buena opcion para mejorar profesionalmente.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card col s3 indigo indigo-card accent-4 z-depth-5">
+        <div class="card-image waves-effect waves-block waves-light">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator white-text text-darken-4 container"
+            ><strong>Angular</strong></span
+          >
+        </div>
+        <div class="card-reveal red accent-4 white-text text-darken-2">
+          <span class="card-title white-text text-darken-4"
+            ><strong>Angular</strong></span
+          >
+          <p>
+            Esta herramienta sea tal vez Framework que mas me llame la atencion,
+            ya que es el que mas he escuchado en entre otros programadores de
+            ser usados.
+          </p>
+        </div>
+      </div>
+
+      <div class="card col s3 red red-card accent-4 z-depth-5">
+        <div class="card-image waves-effect waves-block waves-light">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator white-text text-darken-4 container"
+            ><strong>Ilustrator</strong></span
+          >
+        </div>
+        <div class="card-reveal indigo accent-4 white-text">
+          <span class="card-title white-text text-darken-4"
+            ><strong>Ilustrator</strong></span
+          >
+          <p>
+            Durante mi poca carrera de programador he notado la importancia de
+            saber del diseño web y entre ellos tambien de los artefactos de
+            media que se usan, por ello esta dentro de mis planes el aprender de
+            esta herramienta.
+          </p>
+        </div>
+      </div>
+
+      <div class="card col s3 indigo indigo-card accent-4 z-depth-5">
+        <div class="card-image waves-effect waves-block waves-light">
+        </div>
+        <div class="card-content">
+          <span class="card-title white-text text-darken-4 container"
+            ><strong>Manejo de APIS</strong></span
+          >
+        </div>
+        <div class="card-reveal red accent-4 white-text text-darken-2">
+          <span class="card-title white-text text-darken-4"
+            ><strong>Manejo de APIS</strong></span
+          >
+          <p>
+            Este tipo de herramientas dentro de lo poco que he trabajado con
+            algunos de ellos, veo la importancia del uso de este tipo de
+            herramientas.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="page-footer indigo darken-4">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">
+              Portafilio de Milton Stiven Gonzalez Pinzon
+            </h5>
+            <p class="grey-text text-lighten-4">
+              Gracias por su atencion y su tiempo en ver este portafilio
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Contactame</h5>
+            <ul>
+              <li>
+                <a class="grey-text text-lighten-3" href="#!"
+                  ><strong>Telefono:</strong> 3042217481</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="#!"
+                  ><strong>Correo Electronico:</strong>
+                  miltonstivenpinzon@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">© 2022 Copyright Text</div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+
+    <script>
+      $(document).on("mousemove", ".card", function () {
+        var $card = $(this);
+        var $cardReveal = $(this).find(".card-reveal");
+        $card.css("overflow", "hidden");
+        $cardReveal.css("display", "block");
+        $($cardReveal).animate({
+          top: "0px",
+        });
+      });
+
+      $(document).on("mouseleave", ".card", function () {
+        var $card = $(this);
+        var $cardReveal = $(this).find(".card-reveal");
+        $card.css("overflow", "hidden");
+        $cardReveal.css("display", "block");
+        $($cardReveal).animate({
+          top: "400px",
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".carousel");
+        var instances = M.Carousel.init(elems, {
+          padding: 500,
+          shift: 50,
+          fullWidth: true,
+          indicators: true,
+        });
+      });
+
+      // Or with jQuery
+
+      $(document).ready(function () {
+        $(".carousel").carousel();
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".modal");
+        var instances = M.Modal.init(elems, options);
+      });
+
+      // Or with jQuery
+
+      $(document).ready(function () {
+        $(".modal").modal();
+      });
+    </script>
+    <script>
+      var miCheckbox = document.getElementById('miElementoCheckbox');
+      var navbar = document.getElementById('color-navbar');
+      var table = document.getElementById('color-table');
+    
+      miCheckbox.addEventListener('click', function() {
+        if(miCheckbox.checked) {
+          $("body").css("background-color", "#171717");
+        } else {
+          $("body").css("background-color", "#eaf2ef");
+        }
+      });
+
+        navbar.addEventListener('blur', function() {
+          var colornavbar = document.getElementById('color-navbar').value;
+          $("#sticky-top").removeClass("indigo");
+          var nav = document.getElementById('sticky-top');
+          nav.style.background = colornavbar;
+      });
+
+      table.addEventListener('blur', function() {
+          var colortable = document.getElementById('color-table').value;
+          $("#thead").removeClass("indigo");
+          var thead = document.getElementById('thead');
+          thead.style.background = colortable;
+          colortable = colortable.replace(/[^0-9A-Fa-f]/gi, '');
+
+          var resultado = Number.parseInt(colortable,16);
+          resultado = resultado* 2;
+          let resultado2 = resultado.map((resultado) => {
+            resultado2.toString(16);
+          })
+      });
+    </script>
+  </body>
+</html>

@@ -1,717 +1,272 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-     <!-- Compiled and minified CSS -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-     <!-- Compiled and minified JavaScript -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-      
-    <style>
-      .sticky-top {
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0;
-        z-index: 1020;
-      }
-
-      body {
-        background-color: #eaf2ef;
-      }
-
-      .background{
-        background-image: url("media/config.webp");
-        background-size: cover;
-      }
-      .sidenav{
-        padding-top: 9vh!important;
-      }
-    </style>
-    <script>
-      function isMobile() {
-        return (
-          navigator.userAgent.match(/Android/i) ||
-          navigator.userAgent.match(/webOS/i) ||
-          navigator.userAgent.match(/iPhone/i) ||
-          navigator.userAgent.match(/iPod/i) ||
-          navigator.userAgent.match(/iPad/i) ||
-          navigator.userAgent.match(/BlackBerry/i)
-        );
-      }
-      isMobile();
-</script>
-
-</head>
-  <body>
-    <!--<img src="media/logo.png" alt="" style="width: 100%;height: 90vh; padiing:0px;">-->
-    <div class="sticky-top">
-      <nav class="indigo darken-4" id="sticky-top">
-        <div class="navbar-wrapper container">
-          <ul class="left">
-            <li><a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">settings</i></a>
-            </li>
-          </ul>
-          <a class="white-text text-darken-2 brand-logo center" href="#"
-            >Mi Portafilio</a>
-          <ul class="right">
-          </ul>
-        </div>
-      </nav>
-    </div>
-
-
-    <ul id="slide-out" class="sidenav">
-      <li><div class="user-view">
-        <div class="background">
-        </div>
-        <h4 class="white-text">Configuraciones</h4><br>
-      </div></li>
-      <li><a href="#!" class="input-title" >Modo Oscuro</a>
-        <label class="input-switch">
-          <input type="checkbox" id="miElementoCheckbox">
-          <span class="input-slider round"></span>
-        </label>
-      </li><br><br><br>
-      <li><a href="#!" class="input-title" >Color de Menu</a><input type="color" name="color-navbar" id="color-navbar"></li>
-      <li><a href="#!" class="input-title" >Color de Tabla</a><input type="color" name="color-table" id="color-table"></li>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Tu nombre | Portafolio</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="css/style.css"
+    />
+    <script defer="defer" src="main.ee06f7f1275e84baf1f9.js"></script>
+    <link href="main.8893f95b07b2df453b10.css" rel="stylesheet" />
+  </head>
+  <body id="root">
+    <header>
+      <img
+        class="circle"
+        src="media/foto.png"
+        alt="logo large"
+      />
+      <h1>Milton Stiven Gonzalez Pinzón</h1>
+      <hr />
+      <h2>Desarrollador Web</h2>
+      <video autoplay loop muted>
+        <source src="c97fb08d9006a59b6013.mp4" />
+      </video>
+    </header>
+    <nav id="navbar" class="red darken-3">
+      <div>
+        <a href="/"
+          >
+          <span>Milton Stiven Gonzalez Pinzón<small>Desarrollador Web</small></span> </a
+        ><button id="hamburger">☰</button>
+      </div>
+      <ul>
+        <li><a href="#Lenguajes">Lenguajes</a></li>
+        <li><a href="#Proyectos">Proyectos</a></li>
+        <li><a href="#Estudios">Estudios</a></li>
+        <li><a href="#Reconocimientos">Reconocimientos</a></li>
+        <li><a href="#Contactame">Contactame</a></li>
       </ul>
-    
-
-    <hr/>
-    <div class="container">
-      <table class="centered responsive-table indigo lighten-4">
-        <thead >
-          <tr class="indigo" id="thead">
-            <th colspan="4">Tipo de Dato</th>
-            <th colspan="4">Dato</th>
-          </tr>
-        </thead>
-
-        <tbody id="tbody">
-          <tr>
-            <td><strong>Nombres:</strong></td>
-            <td colspan="3">Milton Stiven</td>
-            <td><strong>Apellidos:</strong></td>
-            <td colspan="3">Gonzalez Pinzon</td>
-          </tr>
-          <tr>
-            <td><strong>Edad:</strong></td>
-            <td>18 años</td>
-            <td><strong>Ciudad de Residencia:</strong></td>
-            <td colspan="2">Bogotá D.C</td>
-            <td><strong>Teléfono:</strong></td>
-            <td>3042217481</td>
-          </tr>
-          <tr>
-            <td colspan="2"><strong>Correo Electronico:</strong></td>
-            <td colspan="2">miltonstivenpinzon@gmail.com</td>
-            <td colspan="2"><strong>Cargo a aspirar:</strong></td>
-            <td colspan="2">Desarrollador Web</td>
-          </tr>
-          <tr>
-            <td><strong>Años de Experiencia:</strong></td>
-            <td>1 año aproximadamente</td>
-            <td colspan="4"><strong>Ultimo estudio realizado:</strong></td>
-            <td>
-              Tecnologo en Analisis y Desarrollado de Sistemas de Información
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <hr />
-    <div class="container center red accent-4 titulo">
-      <h2 class="white-text">Lenguajes Conocidos</h2>
-      <br />
-    </div>
-    <br />
-    <div class="row">
-      <div class="card col s3 red red-card accent-4 z-depth-5">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img
-            class="responsive-img activator container img-cap"
-            src="media/html-5.png"
-          />
-        </div>
-        <div class="card-content">
-          <span class="card-title activator white-text text-darken-4 container"
-            ><strong>HTML:</strong> 6<i class="material-icons right"
-              >more_vert</i
-            ></span
-          >
-        </div>
-        <div class="card-reveal indigo accent-4 white-text">
-          <span class="card-title white-text text-darken-4"
-            ><strong>HTML:</strong> 6<i class="material-icons right"
-              >close</i
-            ></span
-          >
-          <p>
-            Capaz de maquetizar una pagina web utilizando diferentes etiquetas
-            utilizadas.
-          </p>
-        </div>
-      </div>
-
-      <div class="card col s3 indigo indigo-card accent-4 z-depth-5">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img
-            class="responsive-img activator container img-cap"
-            src="media/css-3.png"
-          />
-        </div>
-        <div class="card-content">
-          <span class="card-title activator white-text text-darken-4 container"
-            ><strong>CSS:</strong> 6<i class="material-icons right"
-              >more_vert</i
-            ></span
-          >
-        </div>
-        <div class="card-reveal red accent-4 white-text text-darken-2">
-          <span class="card-title white-text text-darken-4"
-            ><strong>CSS:</strong> 6<i class="material-icons right"
-              >close</i
-            ></span
-          >
-          <p>
-            Capaz de editar el propiedades de etiquetas HTML para poder darles
-            estilos unicos.
-          </p>
-        </div>
-      </div>
-
-      <div class="card col s3 red red-card accent-4 z-depth-5">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img
-            class="responsive-img activator container img-cap"
-            src="media/js.png"
-          />
-        </div>
-        <div class="card-content">
-          <span class="card-title activator white-text text-darken-4 container"
-            ><strong>JS:</strong> 4<i class="material-icons right"
-              >more_vert</i
-            ></span
-          >
-        </div>
-        <div class="card-reveal indigo accent-4 white-text">
-          <span class="card-title white-text text-darken-4"
-            ><strong>JS:</strong> 4<i class="material-icons right"
-              >close</i
-            ></span
-          >
-          <p>
-            Conocimientos en sintaxis basica, conceptos basicos de POO,
-            manipulaciones de DOM, pequeños unos de API.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="card col s3 indigo indigo-card accent-4 z-depth-5">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img
-            class="responsive-img activator container img-cap"
-            src="media/php.png"
-          />
-        </div>
-        <div class="card-content">
-          <span class="card-title activator white-text text-darken-4 container"
-            ><strong>PHP:</strong> 8<i class="material-icons right"
-              >more_vert</i
-            ></span
-          >
-        </div>
-        <div class="card-reveal red accent-4 white-text text-darken-2">
-          <span class="card-title white-text text-darken-4"
-            ><strong>PHP:</strong> 8<i class="material-icons right"
-              >close</i
-            ></span
-          >
-          <p>
-            Capaz de crear un aplicativo web con practicamente solo este
-            lenguaje, teniendo experiencia en Frameworks como Laravel.
-          </p>
-        </div>
-      </div>
-
-      <div class="card col s3 red red-card accent-4 z-depth-5">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img
-            class="responsive-img activator container img-cap"
-            src="media/sql.png"
-          />
-        </div>
-        <div class="card-content">
-          <span class="card-title activator white-text text-darken-4 container"
-            ><strong>SQl:</strong> 7<i class="material-icons right"
-              >more_vert</i
-            ></span
-          >
-        </div>
-        <div class="card-reveal indigo accent-4 white-text">
-          <span class="card-title white-text text-darken-4"
-            ><strong>SQL:</strong> 7<i class="material-icons right"
-              >close</i
-            ></span
-          >
-          <p>
-            Capaz de realizar desde consultas sencillas como hasta procesos
-            almacenados, crucer de datos, cargue de datos masivos, etc.
-          </p>
-        </div>
-      </div>
-
-      <div class="card col s3 indigo indigo-card accent-4 z-depth-5">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="responsive-img container img-cap" src="media/pyt.png" />
-        </div>
-        <div class="card-content">
-          <span class="card-title white-text text-darken-4 container"
-            ><strong>PYTHON:</strong> 2<i class="material-icons right"
-              >more_vert</i
-            ></span
-          >
-        </div>
-        <div class="card-reveal red accent-4 white-text text-darken-2">
-          <span class="card-title white-text text-darken-4"
-            ><strong>PYTHON:</strong> 2<i class="material-icons right"
-              >close</i
-            ></span
-          >
-          <p>
-            Conocimientos en sintaxis basica, y creacion de interfaces graficas
-            sencillas.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- The Modal -->
-    <div class="modal fade" id="myModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <!-- Modal Header -->
-          <div class="modal-header indigo darken-4">
-            <h4 class="modal-title container center white-text">Glovimarket</h4>
-            <button
-              type="button"
-              class="btn deep-purple darken-4"
-              data-bs-dismiss="modal"
-            >
-              <i class="material-icons">close</i>
-            </button>
+    </nav>
+    <main>
+      <section id="Lenguajes" class="even">
+        <h3>Lenguajes</h3>
+        <hr />
+        <div>
+          <div data-aos="fade-right">
+            <a class="tooltipped" data-position="top" data-tooltip="HTML"><img src="media/html-5.png" /></a>
           </div>
-
-          <!-- Modal body -->
-          <div class="modal-body">
-            <div class="carousel carousel-slider">
-              <a class="carousel-item" href="#!"
-                ><img src="media/proy1-1.PNG"
-              /></a>
-              <a class="carousel-item" href="#!"
-                ><img src="media/proy1-2.PNG"
-              /></a>
-              <a class="carousel-item" href="#!"
-                ><img src="media/proy1-3.PNG"
-              /></a>
-              <a class="carousel-item" href="#!"
-                ><img src="media/proy1-4.jpeg"
-              /></a>
-              <a class="carousel-item" href="#!"
-                ><img src="media/proy1-5.jpeg"
-              /></a>
-              <a class="carousel-item" href="#!"
-                ><img src="media/proy1-6.jpeg"
-              /></a>
-              <a class="carousel-item" href="#!"
-                ><img src="media/proy1-7.jpeg"
-              /></a>
-            </div>
+          <div data-aos="fade-down">
+            <a class="tooltipped" data-position="top" data-tooltip="CSS"><img src="media/css-3.png" /></a>
           </div>
-
-          <!-- Modal footer -->
-          <div class="modal-footer indigo darken-4">
-            <button
-              type="button"
-              class="btn red darken-4"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
+          <div data-aos="fade-left">
+            <a class="tooltipped" data-position="top" data-tooltip="JavaScript"><img src="media/js.png" /></a>
+          </div>
+          <div data-aos="fade-right">
+            <a class="tooltipped" data-position="top" data-tooltip="PHP"><img src="media/php.png" /></a>
+          </div>
+          <div data-aos="fade-up">
+            <a class="tooltipped" data-position="top" data-tooltip="SQL"><img src="media/sql.png" /></a>
+          </div>
+          <div data-aos="fade-left">
+            <a class="tooltipped" data-position="top" data-tooltip="Python"><img src="media/pyt.png" /></a>
           </div>
         </div>
-      </div>
-    </div>
-
-    <!-- The Modal -->
-    <div class="modal fade" id="myModal2">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <!-- Modal Header -->
-          <div class="modal-header indigo darken-4">
-            <h4 class="modal-title container center white-text">
-              Filtro para una Galeria
-            </h4>
-            <button
-              type="button"
-              class="btn deep-purple darken-4"
-              data-bs-dismiss="modal"
-            >
-              <i class="material-icons">close</i>
-            </button>
+      </section>
+      <section id="Proyectos">
+        <h3>Proyectos</h3>
+        <hr />
+        <div class="container">
+          <section class="galeria" data-aos="fade-down">
+            <img class="modal-trigger" href="#modal1" src="media/2-1.PNG" alt="">
+            <img class="modal-trigger" href="#modal2" src="media/2-1.PNG" alt="">
+            <img class="modal-trigger" href="#modal3" src="media/3-1.png" alt="">
+            <img class="modal-trigger" href="#modal4" src="media/4-1.png" alt="">
+            <img class="modal-trigger" href="#modal5" src="media/5-1.png" alt="">
+        </section>
+        </div>
+      </section>
+      <section id="Estudios" class="even">
+        <h3>Estudios</h3>
+        <hr />
+        <div>
+          <div data-aos="fade-right">
+            <a class="tooltipped" data-position="top" data-tooltip="
+              <b>Técnico en Programación de Software </b><br>
+              Sena<br>
+              2018 – Noviembre 2020 (Graduado)<br><br>
+              <b>Observaciones: </b><br>
+              Reconocimiento por tener el mejor
+              rendimiento<br> académico de su
+              generación."><img src="media/logoSena.png" /></a>
           </div>
-
-          <!-- Modal body -->
-          <div class="modal-body">
-            <div class="carousel carousel-slider">
-              <a class="carousel-item" href="#!"
-                ><img src="media/proy2-1.jpeg"
-              /></a>
-              <a class="carousel-item" href="#!"
-                ><img src="media/proy2-2.jpeg"
-              /></a>
-              <a class="carousel-item" href="#!"
-                ><img src="media/proy2-3.jpeg"
-              /></a>
-              <a class="carousel-item" href="#!"
-                ><img src="media/proy2-4.jpeg"
-              /></a>
-            </div>
+          <div data-aos="fade-down">
+            <a class="tooltipped" data-position="top" data-tooltip="
+                <b>Tecnólogo en Análisis y Desarrollo <br>
+                de Sistemas de Información. </b><br>
+                Sena<br>
+                Noviembre 2020 - Septiembre 2022<br><br>
+                <b>Observaciones: </b><br>
+                Participacion en diferentes proyectos<br> como en competencia de SenaSoft."><img src="media/logoSena.png" /></a>
           </div>
-
-          <!-- Modal footer -->
-          <div class="modal-footer indigo darken-4">
-            <button
-              type="button"
-              class="btn red darken-4"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
+          <div data-aos="fade-left">
+            <a class="tooltipped" data-position="top" data-tooltip="
+                <b>Ingeniera de Software</b> <br>
+                Uniempresarial(Fundación<br> Universitario Empresarial de la<br> Cámara de Comercio)<br>
+                Agosto 2022 – Actualmente<br><br>
+                <b>Observaciones: </b><br>
+                Cursando 3er semestre de 7"><img src="media/uniempresarial.jpg" /></a>
           </div>
         </div>
-      </div>
-    </div>
-
-    <hr />
-    <div class="container center red darken-4 titulo">
-      <h2 class="white-text">Proyectos en los que he trabajado</h2>
-      <br />
-    </div>
-    <br />
-    <div class="container">
-      <div class="row">
-        <div class="col s12 m6">
-          <div class="card">
-            <div class="card-image">
-              <img src="media/proy1-1.PNG" />
-            </div>
-            <div class="card-content">
-              <h4>Glovimarket</h4>
-
-              <p>
-                Este proyecto trata sobre un aplicativo web enfocado al
-                inventario y venta de produtos opticos, el cual se realizo para
-                el proyecto final durante mis estudios en el tecnologo.
-              </p>
-              <p>
-                El proyecto se realizo utilizando diferentes lenguajes
-                orientados al desarrollo web como HTML, CSS, JS, y
-                principalmente PHP utilizando el Framework Laravel y como motor
-                de datos MYSQL.
-              </p>
-            </div>
-            <div class="card-action">
-              <button
-                type="button"
-                class="btn waves-effect red darken-4 btn modal-trigger"
-                data-bs-toggle="modal"
-                data-bs-target="#myModal"
-              >
-                mas informacion
-              </button>
-            </div>
-          </div>
+      </section>
+      <section id="Reconocimientos">
+        <h3>Reconocimientos</h3>
+        <hr />
+        <div class="container">
+          <section class="galeria" data-aos="fade-down">
+            <img class="modal-trigger" href="#modal6" src="media/reconocimiento1.jpg" alt="">
+            <img class="modal-trigger" href="#modal7" src="media/reconocimiento2.jpg" alt="">
+            <img class="modal-trigger" href="#modal8" src="media/reconocimiento3.png" alt="">
+        </section>
         </div>
-        <div class="col s12 m6">
-          <div class="card">
-            <div class="card-image">
-              <img src="media/proy2-1.jpeg" />
-            </div>
-            <div class="card-content">
-              <h4>Filtro para una Galeria</h4>
-              <p>
-                Este proyecto fue creado con lenguajes orientados al desarrollo
-                web como HTML, CSS, y principalmente toda la funcionalidad con
-                JS nativo, con el fin de poner en practica lo que habia
-                aprendido de manejo de DOM.
-              </p>
-            </div>
-            <div class="card-action">
-              <button
-                type="button"
-                class="btn waves-effect red darken-4 btn modal-trigger"
-                data-bs-toggle="modal"
-                data-bs-target="#myModal2"
-              >
-                mas informacion
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <hr />
-    <div class="container center red darken-4 titulo">
-      <h3 class="white-text">Herramientas que estoy o deseo aprender</h3>
-      <br />
-    </div>
-    <br />
-    <div class="row">
-      <div class="card col s3 red red-card accent-4 z-depth-5">
-        <div class="card-image waves-effect waves-block waves-light">        </div>
-        <div class="card-content">
-          <span class="card-title activator white-text text-darken-4 container"
-            ><strong>JS</strong></span
-          >
-        </div>
-        <div class="card-reveal indigo accent-4 white-text">
-          <span class="card-title white-text text-darken-4"
-            ><strong>JS</strong></span
-          >
-          <p>
-            Siento que este lenguaje sera bastante importante para crecer
-            profesionalmente y asi poder tambien aprender diferentes
-            herramientas que nos puede brindar este lenguajes de programacion.
-          </p>
-        </div>
-      </div>
-
-      <div class="card col s3 indigo indigo-card accent-4 z-depth-5">
-        <div class="card-image waves-effect waves-block waves-light">/>
-        </div>
-        <div class="card-content">
-          <span class="card-title activator white-text text-darken-4 container"
-            ><strong>React</strong></span
-          >
-        </div>
-        <div class="card-reveal red accent-4 white-text text-darken-2">
-          <span class="card-title white-text text-darken-4"
-            ><strong>React</strong></span
-          >
-          <p>
-            He notado que esta libreria es bastante utilizada en este medio, y
-            por ello siento que seria una buena herramienta para crecer
-            profesionalmente y mejor en temas de diseño mis proximos proyectos
-          </p>
-        </div>
-      </div>
-
-      <div class="card col s3 red red-card accent-4 z-depth-5">
-        <div class="card-image waves-effect waves-block waves-light">        </div>
-        <div class="card-content">
-          <span class="card-title activator white-text text-darken-4 container"
-            ><strong>VUE JS</strong></span
-          >
-        </div>
-        <div class="card-reveal indigo accent-4 white-text">
-          <span class="card-title white-text text-darken-4"
-            ><strong>VUE JS</strong></span
-          >
-          <p>
-            Este Framework siempre lo he visto interesante y he visto que
-            tambien es bastante usado en la industria lo cual tambien es una
-            buena opcion para mejorar profesionalmente.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="card col s3 indigo indigo-card accent-4 z-depth-5">
-        <div class="card-image waves-effect waves-block waves-light">
-        </div>
-        <div class="card-content">
-          <span class="card-title activator white-text text-darken-4 container"
-            ><strong>Angular</strong></span
-          >
-        </div>
-        <div class="card-reveal red accent-4 white-text text-darken-2">
-          <span class="card-title white-text text-darken-4"
-            ><strong>Angular</strong></span
-          >
-          <p>
-            Esta herramienta sea tal vez Framework que mas me llame la atencion,
-            ya que es el que mas he escuchado en entre otros programadores de
-            ser usados.
-          </p>
-        </div>
-      </div>
-
-      <div class="card col s3 red red-card accent-4 z-depth-5">
-        <div class="card-image waves-effect waves-block waves-light">
-        </div>
-        <div class="card-content">
-          <span class="card-title activator white-text text-darken-4 container"
-            ><strong>Ilustrator</strong></span
-          >
-        </div>
-        <div class="card-reveal indigo accent-4 white-text">
-          <span class="card-title white-text text-darken-4"
-            ><strong>Ilustrator</strong></span
-          >
-          <p>
-            Durante mi poca carrera de programador he notado la importancia de
-            saber del diseño web y entre ellos tambien de los artefactos de
-            media que se usan, por ello esta dentro de mis planes el aprender de
-            esta herramienta.
-          </p>
-        </div>
-      </div>
-
-      <div class="card col s3 indigo indigo-card accent-4 z-depth-5">
-        <div class="card-image waves-effect waves-block waves-light">
-        </div>
-        <div class="card-content">
-          <span class="card-title white-text text-darken-4 container"
-            ><strong>Manejo de APIS</strong></span
-          >
-        </div>
-        <div class="card-reveal red accent-4 white-text text-darken-2">
-          <span class="card-title white-text text-darken-4"
-            ><strong>Manejo de APIS</strong></span
-          >
-          <p>
-            Este tipo de herramientas dentro de lo poco que he trabajado con
-            algunos de ellos, veo la importancia del uso de este tipo de
-            herramientas.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <footer class="page-footer indigo darken-4">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">
-              Portafilio de Milton Stiven Gonzalez Pinzon
-            </h5>
-            <p class="grey-text text-lighten-4">
-              Gracias por su atencion y su tiempo en ver este portafilio
-            </p>
-          </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Contactame</h5>
-            <ul>
-              <li>
-                <a class="grey-text text-lighten-3" href="#!"
-                  ><strong>Telefono:</strong> 3042217481</a
-                >
-              </li>
-              <li>
-                <a class="grey-text text-lighten-3" href="#!"
-                  ><strong>Correo Electronico:</strong>
-                  miltonstivenpinzon@gmail.com</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer-copyright">
-        <div class="container">© 2022 Copyright Text</div>
-      </div>
+      </section>
+    </main>
+    <footer>
+      <small
+        >Developed and designed by Milton Stiven Gonzalez Pinzón. ©2023. All rights reserved.</small
+      >
     </footer>
-
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/materialize.js"></script>
-    <script src="js/init.js"></script>
-
-    <script>
-      $(document).on("mousemove", ".card", function () {
-        var $card = $(this);
-        var $cardReveal = $(this).find(".card-reveal");
-        $card.css("overflow", "hidden");
-        $cardReveal.css("display", "block");
-        $($cardReveal).animate({
-          top: "0px",
-        });
-      });
-
-      $(document).on("mouseleave", ".card", function () {
-        var $card = $(this);
-        var $cardReveal = $(this).find(".card-reveal");
-        $card.css("overflow", "hidden");
-        $cardReveal.css("display", "block");
-        $($cardReveal).animate({
-          top: "400px",
-        });
-      });
-
-      document.addEventListener("DOMContentLoaded", function () {
-        var elems = document.querySelectorAll(".carousel");
-        var instances = M.Carousel.init(elems, {
-          padding: 500,
-          shift: 50,
-          fullWidth: true,
-          indicators: true,
-        });
-      });
-
-      // Or with jQuery
-
-      $(document).ready(function () {
-        $(".carousel").carousel();
-      });
-
-      document.addEventListener("DOMContentLoaded", function () {
-        var elems = document.querySelectorAll(".modal");
-        var instances = M.Modal.init(elems, options);
-      });
-
-      // Or with jQuery
-
-      $(document).ready(function () {
-        $(".modal").modal();
-      });
-    </script>
-    <script>
-      var miCheckbox = document.getElementById('miElementoCheckbox');
-      var navbar = document.getElementById('color-navbar');
-      var table = document.getElementById('color-table');
-    
-      miCheckbox.addEventListener('click', function() {
-        if(miCheckbox.checked) {
-          $("body").css("background-color", "#171717");
-        } else {
-          $("body").css("background-color", "#eaf2ef");
-        }
-      });
-
-        navbar.addEventListener('blur', function() {
-          var colornavbar = document.getElementById('color-navbar').value;
-          $("#sticky-top").removeClass("indigo");
-          var nav = document.getElementById('sticky-top');
-          nav.style.background = colornavbar;
-      });
-
-      table.addEventListener('blur', function() {
-          var colortable = document.getElementById('color-table').value;
-          $("#thead").removeClass("indigo");
-          var thead = document.getElementById('thead');
-          thead.style.background = colortable;
-          colortable = colortable.replace(/[^0-9A-Fa-f]/gi, '');
-
-          var resultado = Number.parseInt(colortable,16);
-          resultado = resultado* 2;
-          let resultado2 = resultado.map((resultado) => {
-            resultado2.toString(16);
-          })
-      });
-    </script>
+    <div id="modal1" class="modal modal-fixed-footer">
+      <div class="modal-content">
+        <div class="owl-carousel">
+          <div><img class="img-carousel" src="media/2-1.PNG"></div>
+          <div><img class="img-carousel" src="media/2-2.png"></div>
+          <div><img class="img-carousel" src="media/2-3.PNG"></div>
+          <div><img class="img-carousel" src="media/2-4.jpeg"></div>
+          <div><img class="img-carousel" src="media/2-5.jpeg"></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <p>Proyecto realizado durante el tecnico en Programacion de software, el cual consta en ser un observador escolar para la institucion donde estudie, para este desarrollo se utilizaron lenguajes como HTML, CSS, JavaScript, PHP y utilizando el motor de base de datos mysql </p><a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+      </div>
+    </div>
+    <div id="modal2" class="modal modal-fixed-footer">
+      <div class="modal-content">
+        <div class="owl-carousel">
+          <div><img class="img-carousel" src="media/2-1.PNG"></div>
+          <div><img class="img-carousel" src="media/2-2.png"></div>
+          <div><img class="img-carousel" src="media/2-3.PNG"></div>
+          <div><img class="img-carousel" src="media/2-4.jpeg"></div>
+          <div><img class="img-carousel" src="media/2-5.jpeg"></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <p>Proyecto realizado durante el tecnologo en Analisis y Desarrollo de Sistemas de Información el cual se consiste en un Ecommerce de una optica, en el cual se desarrollo usando herramientas como HTML, CSS, JavaScript y enfocandonos en el framework de PHP llamado Laravel.</p><a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+      </div>
+    </div>
+    <div id="modal3" class="modal modal-fixed-footer">
+      <div class="modal-content">
+        <div class="owl-carousel">
+          <div><img class="img-carousel" src="media/3-1.PNG"></div>
+          <div><img class="img-carousel" src="media/3-2.png"></div>
+          <div><img class="img-carousel" src="media/3-3.png"></div>
+          <div><img class="img-carousel" src="media/3-4.png"></div>
+          <div><img class="img-carousel" src="media/3-5.png"></div>
+          <div><img class="img-carousel" src="media/3-6.png"></div>
+          <div><img class="img-carousel" src="media/3-7.png"></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <p>Proyecto realizado durante las practicas del tecnologo en Analisis y Desarrollo de Sistemas de Información, el cual consta sobre una biblioteca para la gestion de documentacion (liquidaciones, facturas, contratos, etc) sobre los proveedores de la compañia, este aplicativo se desarrollo sobre el framework de PHP llamado Laravel y usando como motor de base de datos SQL SERVER.</p><a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+      </div>
+    </div>
+    <div id="modal4" class="modal modal-fixed-footer">
+      <div class="modal-content">
+        <div class="owl-carousel">
+          <div><img class="img-carousel" src="media/4-1.PNG"></div>
+          <div><img class="img-carousel" src="media/4-2.png"></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <p>Proyecto realizado durante las practicas en la ingeneria de software, el cual consiste en ser un formulario para los estudiantes de la universidad pedidos por esta misma, donde los administrativos tambien podian entrar al aplicativo y poder descargar en formato excel todas las respuestas de los estudiantes. este proyecto se desarrollo en lenguajes como HTML, CSS, JavaScript, PHP y utilizando el motor de base de datos mysql</p><a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+      </div>
+    </div>
+    <div id="modal5" class="modal modal-fixed-footer">
+      <div class="modal-content">
+        <div class="owl-carousel">
+          <div><img class="img-carousel" src="media/5-1.PNG"></div>
+          <div><img class="img-carousel" src="media/5-2.png"></div>+
+        </div>
+      </div>
+      <div class="modal-footer">
+        <p>Proyecto realizado durante las practicas en la ingeneria de software, el cual consta en ser un sistema de agendamiento de los espacios dentro de la universidad, ya sean como para estudiantes, docentes y/o administrativos. Para este proyecto se utilizo el framework de PHP llamado Laravel y usando como motor de base de datos mysql.</p><a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+      </div>
+    </div>
+    <div id="modal6" class="modal modal-fixed-footer">
+      <div class="modal-content">
+        <img src="media/reconocimiento1.jpg" alt="">
+      </div>
+      <div class="modal-footer">
+        <p>Reconocimiento otorgado en 2020 por el mejor rendimiento academico durante el tecnico en Programacion de Software</p><a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+      </div>
+    </div>
+    <div id="modal7" class="modal modal-fixed-footer">
+      <div class="modal-content">
+        <img src="media/reconocimiento2.jpg" alt="">
+      </div>
+      <div class="modal-footer">
+        <p>Reconocimiento otorgado en 2022 por el buen desarrollo del aplicativo destinado en la experiencia laboral en telefonica Movistar</p><a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+      </div>
+    </div>
+    <div id="modal8" class="modal modal-fixed-footer">
+      <div class="modal-content">
+        <img src="media/reconocimiento3.png" alt="">
+      </div>
+      <div class="modal-footer">
+        <p>Reconocimiento otorgado en 2022 por buen desempeño laboral en practicas universitarias.</p><a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+      </div>  
+    </div>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+  AOS.init();
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.tooltipped');
+    var instances = M.Tooltip.init(elems);
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems);
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems);
+  });
+
+  $(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+});
+  </script>
 </html>
