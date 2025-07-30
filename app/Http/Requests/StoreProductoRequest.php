@@ -28,7 +28,7 @@ class StoreProductoRequest extends FormRequest
             'fecha_vencimiento' => 'nullable|date',
             'img_path' => 'nullable|image|mimes:png,jpg,jpeg|max:2048',
             'marca_id' => 'required|integer|exists:marcas,id',
-            'presentacione_id' => 'required|integer|exists:presentaciones,id',
+            // 'presentacione_id' => 'required|integer|exists:presentaciones,id',
             'categorias' => 'required'
         ];
     }
